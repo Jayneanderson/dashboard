@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
     <title>Dashboard</title>
 </head>
+
 <body>
 
     <div class="container">
-        <aside class="sidebar">
+        <nav class="sidebar">
             <div class="sidebar-top">
                 <h3 class="sidebar-title">Style3</h3>
             </div><!-- Fim da div do título -->
@@ -20,44 +24,44 @@
                 <ul class="menu-list">
                     <li class="menu-element">
                         <a href="" class="menu-link">
-                            <i class="fas fa-home icon"><span> Painel</span></i>
+                            <i class="fas fa-home icon"><span class="menu-title"> Painel</span></i>
                         </a>
                     </li>
                     <li class="menu-element">
                         <a href="" class="menu-link">
-                            <i class="fas fa-home icon"><span> ada</span></i>
+                            <i class="fas fa-home icon"><span class="menu-title"> ada</span></i>
                         </a>
                     </li>
                     <li class="menu-element">
                         <a href="" class="menu-link">
-                            <i class="fas fa-home icon"><span> Estatísticas</span></i>
+                            <i class="fas fa-home icon"><span class="menu-title"> Estatísticas</span></i>
                         </a>
                     </li>
                     <li class="menu-element">
                         <a href="" class="menu-link">
-                            <i class="fas fa-home icon"><span> Configurações</span></i>
+                            <i class="fas fa-home icon"><span class="menu-title"> Configurações</span></i>
                         </a>
                     </li>
                     <li class="menu-element">
                         <a href="" class="menu-link">
-                            <i class="fas fa-home icon"><span> Dúvidas</span></i>
+                            <i class="fas fa-home icon"><span class="menu-title"> Dúvidas</span></i>
                         </a>
                     </li>
                     <li class="menu-element">
                         <a href="" class="menu-link">
-                            <i class="fas fa-home icon"><span> Usuários</span></i>
+                            <i class="fas fa-home icon"><span class="menu-title"> Usuários</span></i>
                         </a>
                     </li>
                 </ul>
             </div>
-        </aside><!-- Fim do aside -->
+        </nav><!-- Fim do aside -->
 
         <main class="main">
             <header class="header">
                 <ul class="header-first">
                     <li class="header-element">
                         <a href="" class="header-link">
-                            Admin
+                            Nome do painel atual
                         </a>
                     </li>
                 </ul>
@@ -69,14 +73,46 @@
                             <input type="search" id="search">
                         </label>
                     </div>
-                    <img src="jay-perfil.jpg" alt="" class="header-img">
-                    <span>Jayneanderson</span>
+                    <img src="assets/img/jay-perfil.jpg" alt="" class="header-img">
                     <i class="fas fa-chevron-down"></i>
+                    <div class="header-notification">
+                        <span class="number-notification">3</span>
+                        <i class="far fa-bell"></i>
+                    </div>
                 </div>
             </header>
+            <section class="container-midle">
+                <div class="welcome-container">
+                    <div class="welcome">
+                        <h3 class="welcome-title">OLÁ, JAY. SEJA BEM-VINDO</h3>
+                        <p class="welcome-text">text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+                            make a type specimen book. It has survived not only five centuries, but also the leap into
+                            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                            with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
+                            desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+                    </div>
+                </div>
+                <div class="welcome-container">
+                    <div class="welcome">
+                        <h3 class="welcome-title">O QUE VOCÊ GOSTARIA DE FAZER?</h3>
+                        <div class="buttons">
+                            <a href="#" class="button">ALTERAR O CONTEÚDO DE UMA PÁGINA</a>
+                            <a href="#" class="button">DESCOBRIR QUANTAS PESSOAS ACESSARAM MEU SITE</a>
+                            <a href="#" class="button">SOLICITAR UMA ALTERAÇÃO NO CÓDIGO</a>
+                            <a href="#" class="button">PERMITIR QUE OUTRA PESSOA ACESSE E DITE O SITE</a>
+                            <a href="#" class="button">ALTERAR MEU CADASTRO</a>
+                            <a href="#" class="button">ESCREVER UM ARTIGO PARA O BLOG</a>
+                            <a href="#" class="button">VISUALIZAR MEU SITE</a>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
         </main>
     </div>
 
-    
+
 </body>
+
 </html>
