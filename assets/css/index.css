@@ -86,6 +86,7 @@ a {
 
 .main {
     width: calc(100% - 250px);
+    height: 100%;
     transition: none;
     transition-timing-function: none;
 }
@@ -177,6 +178,7 @@ a {
 }
 
 .welcome-title {
+    color: rgba(33, 33, 33, .7);
     margin-bottom: 16px;
 }
 
@@ -235,3 +237,57 @@ a {
     background-color: #eaebeb;
 }
 
+.last-updates {
+    padding-top: 40px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#updates-title {
+}
+
+.updates {
+    margin-top: 24px;
+    border: 1px solid green;
+    padding: 0 24px;
+}
+
+.update {
+    position: relative;
+    padding-bottom: 48px;
+    padding-left: 24px;
+    border-left: 1px solid #B2B2B2;
+}
+
+.circle {
+    width: 24px;
+    height: 24px;
+    left: -12px;
+    top: -5px;
+    position: absolute;
+    border: 1px solid #B2B2B2;
+    border-radius: 50%;
+    background-color: #eaebeb;
+}
+
+.update-title {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border: 1px solid blue;
+    color: rgba(33, 33, 33, .7);
+}
+
+.update-time {
+    
+    
+}
+
+.update-time, 
+.update-text {
+    color: #B2B2B2;
+}
+
+.update-text {
+    font-size: 14px;
+}
