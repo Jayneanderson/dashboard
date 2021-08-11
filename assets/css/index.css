@@ -32,23 +32,39 @@ a {
     width: 100%;
     height: 900px;
     display: flex;
-    
+    position: relative;
 }
 
-.sidebar {
+.menu-container {
+    display: none;
+    position: absolute;
+    z-index: 999;
+}
+
+#isClick {
+    display: none;
+}
+
+#isClick[type=checkbox]:checked ~ .nav {
+    left: 0;
+}
+
+.nav {
     width: 300px;
     height: 100%;
     background-color: #2d3035;
-    transition: 0.3s;
+    transition: 0.2s;
+    top: 0;
+    left: -300px;
 }
 
-.sidebar-top {
+.nav-top {
     background-color: #26282d;
     text-align: center;
     padding: 30px 20px;
 }
 
-.sidebar-title {
+.nav-title {
     color: #ffff;
 }
 
@@ -86,9 +102,7 @@ a {
 
 .main {
     width: calc(100% - 250px);
-    height: 100%;
     transition: none;
-    transition-timing-function: none;
 }
 
 .header {
@@ -106,9 +120,20 @@ a {
     font-weight: 700;
 }
 
-.header-right {
+#logo {
+    display: none;
+    color: black;
+}
+
+.header-right,
+.profile {
     display: flex;
     align-items: center;
+}
+
+.nav-title,
+.profile {
+    cursor: pointer;
 }
 
 #label-search {
@@ -147,15 +172,17 @@ a {
     margin-left: 10px;
 }
 
-.fa-search {
+#fa-search {
     position: absolute;
     top: 3px;
     left: 9px;
 }
 
 #search {
+    width: 181px;
     border: none;
     padding: 7px;
+    padding-left: 24px;
     border-radius: 13px;
     outline: none;/* lembre-se de criar um outiline alternativo por questão de acessibilidade */
     border: 1px solid black;
@@ -167,8 +194,10 @@ a {
 
 .container1 {
     width: 67%;
-    margin-top: 24px;
-    margin-left: 24px;
+    padding-top: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+    overflow-y: auto;
 }
 
 .welcome-container {
@@ -183,7 +212,7 @@ a {
 }
 
 .containers {
-    height: 100%;
+    height: calc(100% - 83px);
     display: flex;
     justify-content: space-between;
 }
@@ -212,12 +241,12 @@ a {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .annotation {
     width: 49%;
 }
-
 .annotation-input {
     width: 100%;
     height: 30px;
@@ -231,8 +260,7 @@ a {
 }
 
 .container2 {
-    width: 29%;
-    height: calc(100% - 83px);
+    width: 33%;
     overflow-y: auto;
     background-color: #eaebeb;
 }
@@ -240,6 +268,7 @@ a {
 .last-updates {
     padding-top: 40px;
     padding-bottom: 16px;
+    padding-right: 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
@@ -248,7 +277,6 @@ a {
 
 .updates {
     margin-top: 24px;
-    border: 1px solid green;
     padding: 0 24px;
 }
 
@@ -274,7 +302,6 @@ a {
     width: 100%;
     margin-top: 10px;
     margin-bottom: 5px;
-    border: 1px solid blue;
     color: rgba(33, 33, 33, .7);
 }
 
