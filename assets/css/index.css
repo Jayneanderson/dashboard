@@ -37,8 +37,16 @@ a {
 
 .menu-container {
     display: none;
-    position: absolute;
+    position: fixed;
+    top: 28px;
+    left: 24px;
+    font-size: 24px;
     z-index: 999;
+    cursor: pointer;
+}
+
+#close {
+    display: none;
 }
 
 #isClick {
@@ -65,6 +73,7 @@ a {
 }
 
 .nav-title {
+    display: block;
     color: #ffff;
 }
 
@@ -77,12 +86,15 @@ a {
 
 .menu-element {
     margin-bottom: 20px;
-    transition: .3s;
+    transition: .2s;
+    padding: 8px 12px;
+    border-radius: 16px;
+    cursor: pointer;
 }
 
-.menu-link {
-    color: #717171;
-    font-size: 18px;
+.menu-element:hover {
+    background-color: #26282d;
+
 }
 
 .menu-element:hover span {
@@ -90,7 +102,12 @@ a {
 }
 
 .menu-element:hover i {
-    color: red;
+    color: #3751FF;
+}
+
+.menu-link {
+    color: #717171;
+    font-size: 18px;
 }
 
 
@@ -112,7 +129,7 @@ a {
     justify-content: space-between;
     align-items: center;
     background-color: #faf9fc;
-    padding: 0 20px;
+    padding: 0 24px;
 }
 
 .header-link {
@@ -123,6 +140,8 @@ a {
 #logo {
     display: none;
     color: black;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .header-right,
@@ -155,7 +174,7 @@ a {
     display: block;
     font-size: 10px;
     position: absolute;
-    padding: 1px 2px;
+    padding: 0px 2px;
     background-color: #3751FF;
     top: -1px;
     right: -4px;
@@ -182,7 +201,7 @@ a {
     width: 181px;
     border: none;
     padding: 7px;
-    padding-left: 24px;
+    padding-left: 32px;
     border-radius: 13px;
     outline: none;/* lembre-se de criar um outiline alternativo por questão de acessibilidade */
     border: 1px solid black;
@@ -228,6 +247,7 @@ a {
     flex-grow: 1;
     flex-shrink: 1;
     font-size: 12px;
+    font-weight: 600;
     padding: 5px 7px;
     margin-bottom: 8px;
     margin-right: 5px;
