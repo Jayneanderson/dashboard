@@ -8,6 +8,10 @@
         width: 80px;
     }
 
+    .menu-element {
+        padding: 8px 0px;
+    }
+
     .nav-top {
         padding: 30px 10px;
     }
@@ -27,13 +31,30 @@
     .main {
     }
 
-    .menu-container {
+    .header {
+        position: fixed;
+    }
+
+    #open {
+        display: block;
+    }
+    
+    #close {
+        z-index: 999;
+    }
+    #isClick[type=checkbox]:checked ~ #open {
+        display: none;
+    }
+
+    #isClick[type=checkbox]:checked ~ #close {
         display: block;
     }
 
+
     .nav {
         width: 250px;
-        position: absolute;
+        position: fixed;
+        z-index: 3;
     }
 
     .menu-title {
@@ -45,12 +66,17 @@
     }
 
     #logo {
-        display: block;
+        display: inline-block;
     }
 
     .header-logo {
         width: 100%;
+        display: block;
         text-align: center;
+    }
+
+    .containers {
+        margin-top: 83px;
     }
 
     .container1 {
