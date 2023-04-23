@@ -102,7 +102,7 @@ a {
 }
 
 .menu-element:hover i {
-    color: #3751FF;
+    color: #ffffff;
 }
 
 .menu-link {
@@ -175,9 +175,10 @@ a {
     font-size: 10px;
     position: absolute;
     padding: 0px 2px;
+    color: #ffff;
     background-color: #3751FF;
-    top: -1px;
-    right: -4px;
+    top: 0px;
+    right: 0px;
     border-radius: 2px;
 }
 
